@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : https://github.com/omerwyo
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Omer Wai Yan Oo} \\ \vspace{1pt}
+    \small +65 90090919 $|$ \href{mailto:omerbaggia123@gmail.com}{\underline{omerbaggia123@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/omerwyo}{\underline{https://linkedin.com/in/omerwyo}} $|$
+    \href{https://github.com/omerwyo}{\underline{github.com/omerwyo}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore Management University}{Singapore}
+      {Bachelor of Science in Computer Science}{August 2020 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Technology Executive at SMU Ellipsis, the student body for the School of Computing and Information Systems}
+        \resumeItem{Honorary Finance Secretary of SMU Stereometa, the premier student DJ-ing community in Singapore}
+        \resumeItem{Finance Head of Project Teung VI, a community service project to teach English and Financial Literacy to Thai youth}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {St. Andrew's Junior }{Bryan, TX}
+    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2022 -- Present}
+      {Ox Street (Carousell Group)}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Ox Street is a streetwear marketplace part of the Carousell Group for new and used sneakers}
+        \resumeItem{Developed a full rehaul of the main web application in NextJS with TypeScript, working full-stack}
+        \resumeItem{Worked on backend services for pricing and category management with Express and TypeScript}
+        \resumeItem{Followed best practices and interaction testing during phased development}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 - Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+  %  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+      \resumeSubheading
+      {Data Science Intern}{June 2021 -- September 2021}
+      {Ox Street (Carousell Group)}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Implemented conversion tracking and data visualisation with various tools such as Google Analytics, Amplitude, Intercom, Pandas}
+        \resumeItem{Programmed an internal price-monitoring service with Flask on Heroku to gather up-to-date and accurate sneaker pricing data, allowing the number of accurate listings on the app to double}
+        \resumeItem{Wrote various Python scripts to automate workflows for catalogue managers}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Rupiks} $|$ \emph{Flutter, Dart, C++}}{In Progress}
+          \resumeItemListStart
+            \resumeItem{Developed a mobile application to solve a Rubiks Cube based off of camera input from the device}
+            \resumeItem{Integrated an algorithm to solve any given cube efficiently}
+          \resumeItemListEnd
+%-------------------------------------------
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/omerwyo/Locus}{\underline{Locus}}} $|$ \emph{Spring, React, Flask, GCP}}{August 2021 -- November 2021}
+          \resumeItemListStart
+            \resumeItem{Locus is event-management platform for the new normal where communities can organise physical events without hassle}
+            \resumeItem{Utilised the Spring MVC Framework to build various APIs for the management of users \& events, with automated vaccination certificate verification using GovTech's OpenAttestation client}
+            \resumeItem{Programmed a web scraper microservice in Flask that collects prevailing COVID-19 regulations and event capacity limits from verified sources and integrates them into the main application}
+            \resumeItem{The project was presented an Outstanding Project Award by Credit Suisse}
+          \resumeItemListEnd
+%-------------------------------------------
+      \resumeProjectHeading
+          {\textbf{Candour} $|$ \emph{Flask, React, Solidity, Truffle}}{August 2021 -- November 2021}
+          \resumeItemListStart
+            \resumeItem{Candour is a decentralised application meant to allow clothing companies to document the stages of their supply chain on the blockchain in an immutable manner}
+            \resumeItem{Programmed an indexer microservice to track completed product cycles to be displayed on a product discovery page for users}
+            \resumeItem{Assisted in writing smart contracts which could be interacted with via MetaMask on the browser to perform blockchain transactions}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, C++, SQL (Postgres), TypeScript, Dart, HTML/CSS} \\
+     \textbf{Frameworks}{: React, NextJS, Flask, Node.js, Flutter, ExpressJS, Spring} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, Google Cloud Platform, Heroku, VS Code } \\
+     \textbf{Libraries}{: pandas, NumPy, matplotlib} \\
+     \textbf{Certifications}{: Oracle Certified Foundations Associate (Java)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
