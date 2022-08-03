@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{resume-openfont}[2021/05/30 Abdullah's version]
+\ProvidesClass{styles/resume-openfont}[2021/05/30 Abdullah's version]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
