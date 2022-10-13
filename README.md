@@ -1,6 +1,8 @@
 # Resume
 my resume in tex
 
+look at omer_resume.pdf for the latest version!
+
 ## Build using Docker
 
 #### Build Image
