@@ -1,7 +1,7 @@
 # Resume
 my resume in tex
 
-have a look at [omer_resume.pdf](https://github.com/omerwyo/resume/blob/main/omer_resume_a.pdf) for the latest version!
+have a look at [omer_resume.pdf](https://github.com/omerwyo/resume/blob/main/omer_resume.pdf) for the latest version!
 
 ## Build using Docker
 
